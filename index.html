@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firebase Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Task Manager</h1>
+
+  <div class="auth-buttons">
+    <button id="signupBtn">Sign Up</button>
+    <button id="loginBtn">Login</button>
+    <button id="logoutBtn" style="display:none;">Logout</button>
+  </div>
+
+  <div id="taskInputSection" style="display:none;">
+    <input type="text" id="taskInput" placeholder="Enter task" />
+    <select id="taskPriority">
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+    <button id="addTaskButton">Add Task</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
